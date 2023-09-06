@@ -1,0 +1,890 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* line 3, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 8, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+html {
+  font-size: 62.5%;
+}
+
+/* line 11, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Roboto';
+  font-size: 1.8rem;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 20, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 23, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+ul {
+  list-style-type: none;
+}
+
+/* line 26, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+strong {
+  font-weight: 700;
+}
+
+/* line 29, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.container {
+  width: 100%;
+  max-width: 123rem;
+  height: 100%;
+  padding: 0 1.5rem 0 1.5rem;
+  margin: 0 auto;
+}
+
+/* line 36, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+h1 {
+  font-size: 5rem;
+}
+
+/* line 39, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.header {
+  position: absolute;
+  padding-top: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0);
+}
+
+/* line 47, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.header-navigation {
+  display: flex;
+  justify-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 120rem;
+  background: rgba(0, 0, 0, 0);
+}
+
+/* line 57, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.header-navigation__list-item {
+  color: #fff;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* line 63, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.header-navigation__list-item:hover {
+  opacity: 0.7;
+}
+
+/* line 66, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.btn__lk {
+  font-size: 1.6rem;
+  width: 100%;
+  max-width: 20rem;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* line 75, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.btn__menu-burger,
+.btn__lk {
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+/* line 84, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.menu__icon {
+  max-width: 3.2rem;
+  width: 100%;
+  height: 3.2rem;
+}
+
+/* line 89, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.header-navigation__wrapper {
+  padding: 2rem 0 0 5rem;
+  position: fixed;
+  top: 0;
+  max-width: 30rem;
+  left: -100%;
+  width: 30%;
+  min-width: 20%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 102, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.header-navigation__wrapper.active {
+  left: 0;
+}
+
+/* line 107, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.form-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: fixed;
+  margin: auto auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  opacity: 1 !important;
+}
+
+.visible{
+  display: flex;
+}
+
+.sign-up{
+  display: none;
+  transform: opacity 0.5s ease;
+  -webkit-transform: opacity 0.5s ease;
+  -moz-transform: opacity 0.5s ease;
+  -ms-transform: opacity 0.5s ease;
+  -o-transform: opacity 0.5s ease;
+}
+
+/* line 122, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+
+/* line 127, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.form-lk {
+  padding: 5% 6%;
+  background: #fff;
+  border-radius: 10%;
+  text-align: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.sign-in, .sign-up{
+  opacity: 1;
+  z-index: 9999;
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 127, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .form-lk {
+    width: 85%;
+  }
+}
+
+/* line 139, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.form-lk > input {
+  border-radius: 5rem;
+  margin: 0 auto 2rem auto;
+  max-width: 40.2rem;
+  padding-left: 2rem;
+  width: 100%;
+  height: 5.6rem;
+  outline: none;
+  border: none;
+  border: 1px solid #111;
+}
+
+/* line 149, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.form-lk > input::placeholder {
+  font-size: 1.8rem;
+  font-weight: 400;
+  opacity: 1;
+  color: #111;
+}
+
+/* line 155, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.btn-log {
+  margin: 0 auto;
+}
+
+/* line 158, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.form-title {
+  margin: 5rem auto 4rem auto;
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 76.8rem) {
+  /* line 158, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .form-title {
+    margin-bottom: 2rem;
+  }
+}
+
+/* line 164, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.form-text {
+  text-align: center;
+  margin: 2rem auto 0 auto;
+}
+
+/* line 168, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.btn-sign-up {
+  font-weight: 700;
+}
+
+/* line 171, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.hero {
+  padding: 15rem 0 6rem 0;
+  background: #000;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  color: #fff;
+}
+
+/* line 179, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.hero-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 179, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .hero-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* line 187, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.span__sub-title {
+  display: block;
+  max-width: 55rem;
+}
+
+/* line 191, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.hero__p {
+  font-size: 2rem;
+}
+
+/* line 194, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.hero__img {
+  width: 100%;
+  max-width: 55.4rem;
+  min-width: 20rem;
+}
+
+@media screen and (max-width: 76.7rem) {
+  /* line 194, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .hero__img {
+    max-width: 25rem;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 194, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .hero__img {
+    margin-top: 3rem;
+  }
+}
+
+/* line 206, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.title-secondury {
+  font-weight: 700;
+  font-size: 4.2rem;
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 206, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .title-secondury {
+    text-align: center;
+  }
+}
+
+/* line 212, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.sales-hits {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+
+@media screen and (max-width: 76.8rem) {
+  /* line 212, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .sales-hits {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* line 219, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.container-2 {
+  max-width: 138rem;
+  margin: 0 auto;
+}
+
+/* line 223, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.products__navigation-bar_list {
+  display: flex;
+  gap: 4rem;
+  list-style-type: none;
+}
+
+/* line 228, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.products-list__item {
+  font-size: 3.2rem;
+}
+
+/* line 231, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.ml-90px {
+  margin-left: 9rem;
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 231, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .ml-90px {
+    margin-left: 0;
+  }
+}
+
+/* line 236, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.slider {
+  padding: 6rem 0;
+}
+
+/* line 239, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.slider-body {
+  padding-top: 6rem;
+}
+
+/* line 242, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.products-card {
+  max-width: 64.2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+/* line 248, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.card-2 {
+  display: flex;
+}
+
+@media screen and (max-width: 76.8rem) {
+  /* line 248, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .card-2 {
+    display: none;
+  }
+}
+
+/* line 253, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.card-img {
+  width: 100%;
+  max-width: 21.4rem;
+  min-width: 17rem;
+}
+
+/* line 259, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.btn-lrn-more {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-radius: 2.5rem;
+}
+
+/* line 267, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.btn-size-one {
+  padding: 1.2rem 4.5rem;
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 267, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .btn-size-one {
+    padding: 1rem 2rem;
+  }
+}
+
+/* line 272, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.pt-30px {
+  padding-top: 3rem;
+}
+
+/* line 275, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.btn-size-two {
+  padding: 1.4rem 4.8rem;
+}
+
+/* line 278, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.color-btn-one {
+  background-color: #02050A;
+}
+
+/* line 281, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.color-btn-two {
+  background-color: #fff;
+  color: #111;
+}
+
+/* line 285, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.c {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 290, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.products-card__title {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 290, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .products-card__title {
+    font-size: 2.4rem;
+  }
+}
+
+/* line 296, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.products-card__p {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 2.7rem;
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 296, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .products-card__p {
+    font-size: 1.6rem;
+  }
+}
+
+/* line 303, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 307, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.products-list__item.active {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 307, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .products-list__item.active {
+    font-size: 3.2rem;
+  }
+}
+
+/* line 313, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.products__navigation-bar_list {
+  display: flex;
+  align-items: center;
+}
+
+/* line 317, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.exhaust {
+  display: none;
+}
+
+/* line 320, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.services {
+  margin: 0 auto;
+  width: 100%;
+  padding: 6rem 0;
+  background: url("../img/services-bg.jpg");
+}
+
+/* line 326, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.services > .container {
+  color: #fff !important;
+}
+
+/* line 329, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.services > .container > .flex-box {
+  justify-content: space-between;
+  padding-top: 6rem;
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 329, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .services > .container > .flex-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+/* line 338, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.servisec-card__list {
+  width: 100%;
+  max-width: 36rem;
+  background: #4B000F;
+  padding-bottom: 7rem;
+  transition: all .3s ease;
+}
+
+.servisec-card__list-img{
+  height: 20.3rem;
+}
+
+/* line 344, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.servisec-card__list:hover {
+  background: #fff;
+  color: #111 !important;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 76.8rem) {
+  /* line 338, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .servisec-card__list {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 338, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .servisec-card__list {
+    width: 100%;
+  }
+}
+
+/* line 355, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.servisec-card__list-img {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+/* line 359, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.title-four {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 76.8rem) {
+  /* line 359, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .title-four {
+    font-size: 2rem;
+  }
+}
+
+/* line 365, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.padding-list {
+  padding-left: 1rem;
+}
+
+/* line 368, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.servisec-card__list > .title-four {
+  color: #fff;
+}
+
+/* line 371, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.servisec-card__list-description {
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 1.6rem;
+  width: 100%;
+  max-width: 27.4rem;
+  margin-top: 1rem;
+}
+
+/* line 379, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.style_p {
+  line-height: 2.7rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #111;
+}
+
+/* line 385, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.about-us-section {
+  padding-top: 6rem;
+}
+
+@media screen and (max-width: 76.8rem) {
+  /* line 385, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .about-us-section {
+    text-align: center;
+  }
+}
+
+/* line 392, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.mb-10px {
+  margin-bottom: 1rem;
+}
+
+/* line 395, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.mb-60px {
+  margin-bottom: 6rem;
+}
+
+/* line 398, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.color-black {
+  color: #111;
+}
+
+/* line 401, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.what-do {
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 6rem;
+}
+
+/* line 405, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.what-do__img {
+  margin: 6rem auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 405, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .what-do__img {
+    height: 20rem;
+  }
+}
+
+/* line 411, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.partners {
+  padding: 6rem 0;
+}
+
+@media screen and (max-width: 76.8rem) {
+  /* line 411, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .partners {
+    text-align: center;
+  }
+}
+
+/* line 415, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.partners__img {
+  padding-top: 4rem;
+  width: 100%;
+  display: block;
+  max-width: 98.7rem;
+  margin: 0 auto;
+}
+
+/* line 422, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.footer {
+  background: #000;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+@media screen and (max-width: 76.8rem) {
+  /* line 422, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .footer {
+    text-align: center;
+  }
+}
+
+/* line 429, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.adress {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+/* line 435, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.adress-street {
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff !important;
+}
+
+/* line 441, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.footer-icon {
+  max-width: 6rem;
+  width: 100%;
+  height: 6rem;
+  margin-right: 2rem;
+}
+
+/* line 449, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.products-section {
+  margin: 0 auto;
+  width: 100%;
+  padding: 6rem 0;
+}
+
+/* line 454, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.products__list {
+  max-width: 25rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 454, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .products__list {
+    width: 50%;
+    max-width: 12.5rem;
+  }
+}
+
+/* line 461, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.prod-img {
+  max-width: 25rem;
+  width: 100%;
+  min-width: 12.5rem;
+}
+
+/* line 467, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.products__list > li > h4 {
+  color: #111;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 471, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .products__list {
+    padding-bottom: 3rem;
+  }
+}
+
+/* line 474, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.products__list > li > p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* line 478, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.prod-count {
+  color: #FF0000;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+/* line 483, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.text-color {
+  color: #111;
+}
+
+/* line 486, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.pt-60px {
+  padding-top: 6rem;
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 489, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .products-section > .container > .flex-box {
+    max-width: 120rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  /* line 489, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+  .products-section > .container > .flex-box {
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 30rem;
+    width: 100%;
+  }
+}
+
+/* line 501, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.mt-mb {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* line 505, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.staff__img {
+  width: 100%;
+  padding-bottom: 6rem;
+}
+
+/* line 509, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.service-map {
+  width: 100%;
+  max-width: 66.9rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 515, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.our {
+  padding-bottom: 6rem;
+  width: 100%;
+}
+
+/* line 519, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.contacts {
+  width: 100%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* line 525, ../../../../../Users/chekhxv/Desktop/практика/tuning-center/assets/style/SASS/main.sass */
+.phone-link {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+.cart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.modal-header {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  border-top: 1px solid #dee2e6;
+}
+
+.reset-select-style {
+  all: initial;
+  max-width: 50rem;
+  width: 100%;
+  height: 2.4rem;
+  border: .1rem solid #111;
+  font-size: 16px;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.simple-box {
+  margin-bottom: 50px !important;
+}
+
+
+
+.color-car{
+  width: 100%;
+  font-size: 5.4rem;
+}

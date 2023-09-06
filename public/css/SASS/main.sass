@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+
+body
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    font-family: 'Roboto'
+    font-size: 1.8rem
+    width: 100%
+    height: 100%
+
+a
+    text-decoration: none
+
+ul
+    list-style-type: none
+
+strong
+    font-weight: 700
+
+.container
+    width: 100%
+    max-width: 123rem
+    height: 100%
+    padding: 0 1.5rem 0 1.5rem
+    margin: 0 auto
+
+h1
+    font-size: 5rem
+
+.header
+    position: absolute
+    padding-top: 2rem
+    width: 100%
+    margin: 0 auto
+    background: rgba(0, 0, 0, 0)
+
+
+.header-navigation 
+    display: flex
+    justify-items: flex-start
+    justify-content: space-between
+    width: 100%
+    margin: 0 auto
+    align-items: center
+    max-width: 120rem
+    background: rgba(0, 0, 0, 0)
+
+.header-navigation__list-item
+    color: #fff
+    margin-bottom: 3rem
+    font-size: 1.6rem
+    font-weight: 700
+
+.header-navigation__list-item:hover
+    opacity: 0.7
+
+.btn__lk
+    font-size: 1.6rem
+    width: 100%
+    max-width: 20rem
+    height: 3.2rem
+    display: flex
+    align-items: center
+    gap: 2rem
+
+.btn__menu-burger,
+.btn__lk
+    border: none
+    color: #fff
+    font-weight: 700
+    outline: none
+    background: rgba(0 ,0 ,0 ,0)
+    cursor: pointer
+
+.menu__icon
+    max-width: 3.2rem
+    width: 100%
+    height: 3.2rem
+
+.header-navigation__wrapper 
+    padding: 2rem 0 0 5rem
+    position: fixed;
+    top: 0;
+    max-width: 30rem
+    left: -100%;
+    width: 30%;
+    min-width: 20%
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+
+.header-navigation__wrapper.active 
+    left: 0;
+
+
+
+.form-wrapper
+    cursor: pointer
+    position: fixed
+    margin: auto auto
+    width: 100%
+    height: 100%
+    top: 0;
+    left: 0;
+    display: none
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    align-content: flex-start
+    opacity: 0
+
+.visible 
+    display: flex;
+    opacity: 1;
+
+
+.form-lk
+    align-items: flex-start
+    padding: 5% 6% 
+    background: #fff
+    display: flex
+    border-radius: 10%
+    text-align: center
+    flex-direction: column
+    width: 50%
+    @media screen and (max-width: 48rem)
+        width: 85%
+
+.form-lk > input
+    border-radius: 5rem
+    margin: 0 auto 2rem auto
+    max-width: 94.2rem
+    padding-left: 2rem
+    width: 100%
+    height: 9.6rem
+    outline: none
+    border: none
+    border: 1px solid #111
+    &::placeholder
+        font-size: 1.8rem
+        font-weight: 400
+        opacity: 1
+        color: #111
+
+.btn-log
+    margin: 0 auto
+
+.form-title
+    margin: 5rem auto 0 auto
+    font-size: 4.2rem
+    font-weight: 700
+    @media screen and(max-width: 76.8rem)
+        margin-bottom: 2rem
+.form-text
+    text-align: center
+    margin: 2rem auto 0 auto
+
+.btn-sign-up
+    font-weight: 700
+
+.hero
+    padding: 15rem 0 6rem 0 
+    background: #000
+    width: 100%
+    margin: 0 auto;
+    display: block
+    color: #fff;
+
+.hero-box
+    display: flex
+    align-items: center
+    justify-content: space-between
+    @media screen and(max-width: 48rem)
+        flex-direction: column
+        text-align: center
+
+.span__sub-title
+    display: block
+    max-width: 55rem
+
+.hero__p
+    font-size: 2rem
+
+.hero__img
+    width: 100%
+    max-width: 55.4rem
+    min-width: 20rem     
+    @media screen and (max-width: 76.7rem)
+        max-width: 25rem   
+    @media screen and(max-width: 48rem)
+        margin-top: 3rem
+    
+
+
+
+.title-secondury
+    font-weight: 700
+    font-size: 4.2rem
+    @media screen and(max-width: 48rem)
+        text-align: center
+
+.sales-hits
+    padding-top: 10rem
+    padding-bottom: 6rem
+    @media screen and (max-width: 76.8rem)
+        padding-left: 1.5rem
+        padding-right: 1.5rem
+
+.container-2
+    max-width: 138rem
+    margin: 0 auto
+
+.products__navigation-bar_list
+    display: flex
+    gap: 4rem
+    list-style-type: none;
+
+.products-list__item
+    font-size: 3.2rem
+
+.ml-90px
+    margin-left: 9rem
+    @media screen and(max-width: 48rem)
+        margin-left: 0
+
+.slider
+    padding: 6rem 0
+
+.slider-body
+    padding-top: 6rem
+
+.products-card
+    max-width: 64.2rem
+    display: flex
+    align-items: center
+    gap: 2.5rem
+
+.card-2
+    display: flex
+    @media screen and(max-width: 76.8rem) 
+        display: none
+        
+.card-img
+    width: 100%
+    max-width: 21.4rem
+    min-width: 17rem
+    
+
+.btn-lrn-more
+    color: #fff
+    display: inline-block
+    font-size: 1.8rem
+    font-weight: 700
+    border-radius: 2.5rem
+
+
+.btn-size-one
+    padding: 1.2rem 4.5rem
+    @media screen and (max-width: 48rem)
+        padding: 1rem 2rem
+
+.pt-30px
+    padding-top: 3rem
+
+.btn-size-two
+    padding: 1.4rem 4.8rem
+
+.color-btn-one
+    background-color: #02050A
+
+.color-btn-two
+    background-color: #fff
+    color: #111
+
+.c
+    text-align: center
+    margin: 0 auto
+
+
+.products-card__title
+    font-size: 3.2rem
+    font-weight: 700
+    @media screen and(max-width: 48rem)
+        font-size: 2.4rem
+
+.products-card__p
+    margin-top: 2rem
+    margin-bottom: 1rem
+    line-height: 2.7rem
+    @media screen and(max-width: 48rem)
+        font-size: 1.6rem
+
+.flex-box
+    display: flex
+    justify-content: space-between
+
+.products-list__item.active
+    font-size: 4.2rem;
+    font-weight: 700
+    @media screen and(max-width: 48rem)
+        font-size: 3.2rem
+
+.products__navigation-bar_list
+    display: flex
+    align-items: center
+
+.exhaust
+    display: none
+
+.services
+    margin: 0 auto
+    width: 100%
+    padding: 6rem 0 
+    background: url('../img/services-bg.jpg')
+        
+.services > .container
+    color: #fff !important
+
+.services > .container > .flex-box
+    justify-content: space-between
+    padding-top: 6rem
+    @media screen and(max-width: 48rem)
+        flex-direction: column
+        align-items: center
+        gap: 3rem
+        
+
+.servisec-card__list
+    width: 100%
+    max-width: 36rem
+    background: #4B000F
+    padding-bottom: 7rem
+    transition: all .3s ease
+    &:hover
+        background: #fff
+        color: #111 !important
+        opacity: 1 !important
+        cursor: pointer
+    @media screen and (max-width: 76.8rem) 
+        width: 32%
+    @media screen and(max-width: 48rem)
+        width: 100%
+    
+
+.servisec-card__list-img
+    margin-bottom: 2rem
+    width: 100%
+
+.title-four
+    font-size: 2.4rem
+    font-weight: 700
+    @media screen and (max-width: 76.8rem) 
+        font-size: 2rem
+
+.padding-list
+    padding-left: 1rem
+
+.servisec-card__list > .title-four
+    color: #fff
+
+.servisec-card__list-description
+    opacity: 0.7
+    font-weight: 400
+    font-size: 1.6rem
+    width: 100%
+    max-width: 27.4rem
+    margin-top: 1rem
+
+.style_p
+    line-height: 2.7rem
+    font-size: 1.8rem
+    font-weight: 400
+    color: #111
+
+.about-us-section
+    padding-top: 6rem
+    @media screen and (max-width: 76.8rem)
+        text-align: center
+
+    
+
+.mb-10px
+    margin-bottom: 1rem
+
+.mb-60px
+    margin-bottom: 6rem
+
+.color-black
+    color: #111
+
+.what-do
+    margin: 0 auto
+    width: 100%
+    padding-top: 6rem
+    &__img
+        margin: 6rem auto
+        width: 100%
+        @media screen and(max-width: 48rem)
+            height: 20rem
+
+.partners 
+    padding: 6rem 0
+    @media screen and (max-width: 76.8rem)
+            text-align: center
+    &__img
+        padding-top: 4rem
+        width: 100%
+        display: block
+        max-width: 98.7rem
+        margin: 0 auto
+
+.footer
+    background: #000
+    padding-top: 5rem
+    padding-bottom: 10rem
+    @media screen and (max-width: 76.8rem) 
+        text-align: center
+
+.adress
+    font-weight: 700
+    font-size: 3rem
+    margin-bottom: 3rem
+    color: #fff
+
+.adress-street
+    margin-bottom: 1rem
+    font-size: 2.4rem
+    font-weight: 700
+    color: #fff !important
+
+.footer-icon
+    max-width: 6rem
+    width: 100%
+    height: 6rem
+    margin-right: 2rem
+
+// PRODUCTS PAGE
+
+.products-section
+    margin: 0 auto
+    width: 100%
+    padding: 6rem 0
+
+.products__list
+    max-width: 25rem
+    width: 100%
+    @media screen and (max-width: 48rem)
+        width: 50%
+        max-width: 12.5rem
+
+.prod-img
+    max-width: 25rem
+    width: 100%
+    min-width: 12.5rem
+    
+
+.products__list > li > h4
+    color: #111
+    margin-top: 3rem
+
+.products__list
+    @media screen and (max-width: 48rem)
+        padding-bottom: 3rem
+.products__list > li > p
+    margin-top: 1rem
+    margin-bottom: 2rem
+
+.prod-count
+    color: #FF0000
+    font-size: 3.2rem
+    font-weight: 700
+
+.text-color
+    color: #111
+
+.pt-60px
+    padding-top: 6rem
+
+.products-section > .container > .flex-box
+    @media screen and ( max-width: 48rem )
+        max-width: 120rem
+        width: 100%
+    @media screen and ( max-width: 48rem )
+        justify-content: space-between
+        margin: 0 auto
+        flex-wrap: wrap
+        max-width: 30rem
+        width: 100%
+
+
+.mt-mb
+    margin-top: 1rem
+    margin-bottom: 1.5rem
+        
+.staff__img
+    width: 100%
+    padding-bottom: 6rem
+
+.service-map
+    width: 100%
+    max-width: 66.9rem
+    display: block
+    margin: 0 auto
+
+.our
+    padding-bottom: 6rem
+    width: 100%
+
+.contacts
+    width: 100%
+    padding-top: 6rem
+    padding-bottom: 6rem
+
+
+.phone-link
+    font-size: 2.4rem
+    font-weight: 700
+
+
+
+
+
+
+
+
